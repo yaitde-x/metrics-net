@@ -12,7 +12,7 @@ namespace MetricsNet;
 public class XmlParsingTests
 {
     [Fact]
-    public async Task HappyPath()
+    public void HappyPath()
     {
         var embeddedProvider = new EmbeddedFileProvider(Assembly.GetExecutingAssembly());
         var result = embeddedProvider.GetDirectoryContents("metrics_net_test").ToList(); ;
@@ -65,7 +65,7 @@ public class XmlParsingTests
             var report = parser.Parse(stream);
 
             var json = Newtonsoft.Json.JsonConvert.SerializeObject(report, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText("/Users/sakamoto/Temp/metrics.json", json);
+            await File.WriteAllTextAsync("/Users/sakamoto/Temp/metrics.json", json);
         }
         // using (var reader = new XmlTextReader(stream))
         // {

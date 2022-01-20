@@ -4,24 +4,40 @@ namespace MetricsNet;
 
 public class XmlMetricsReportParser
 {
+    // private class CodeMetricsReportContext
+    // {
+
+    //     public CodeMetricsReportContext(CodeMetricsReport report)
+    //     {
+    //         Report = report;
+    //     }
+    //     public CodeMetricsReport Report { get; }
+    //     public CodeTarget? CurrentTarget { get; set; }
+    //     public CodeAssembly? CurrentAssembly { get; set; }
+    //     public CodeNamespace? CurrentNamespace { get; set; }
+    //     public CodeType? CurrentType { get; set; }
+    //     public CodeMember? CurrentMember { get; set; }
+
+    //     public ICodeNode? CurrentNode { get; set; }
+
+    // }
+
     public CodeMetricsReport Parse(Stream? stream)
     {
         if (stream == null)
             throw new ArgumentNullException(nameof(stream));
 
         var report = new CodeMetricsReport();
-        //var nestLevel = 0;
         var nodeDispatch = new Dictionary<string, Func<XmlTextReader, CodeMetricsReport, ICodeNode?, ICodeNode?>>()
         {
             {"Target", ProcessTargetNode},
             {"Assembly", ProcessAssemblyNode},
-            {"Metric", ProcessMetricsNode},
             {"Namespace", ProcessNamespaceNode},
             {"NamedType", ProcessTypeNode},
-            {"Method", ProcessMemberNode}
+            {"Method", ProcessMemberNode},
+            {"Metric", ProcessMetricsNode}
         };
 
-        //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("metrics_net_test.test_files.metrics.xml"))
         var activeMetricsNode = default(ICodeNode);
         using (var reader = new XmlTextReader(stream))
         {
@@ -34,18 +50,6 @@ public class XmlMetricsReportParser
                         activeMetricsNode = proposedNewActiveNode;
 
                 }
-                // if (!string.IsNullOrEmpty(reader.Name))
-                // {
-                //     if (reader.NodeType == XmlNodeType.EndElement)
-                //         nestLevel--;
-
-                //     var tag = $"{new string('\t', nestLevel)}{reader.Name}={reader.GetAttribute("Name")} ({reader.GetAttribute("Value")})";
-
-                //     Console.WriteLine(tag);
-
-                //     if (reader.IsStartElement() && !reader.IsEmptyElement)
-                //         nestLevel++;
-                // }
             }
         }
 
