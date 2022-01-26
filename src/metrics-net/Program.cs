@@ -1,4 +1,5 @@
 ﻿
+using System.CommandLine;
 using MetricsNet;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ var serviceProvider = new ServiceCollection()
                 {
                     opt.AddConsole();
                 })
+            .AddCliCommands()
             .BuildServiceProvider();
 
 
@@ -20,9 +22,21 @@ if (serviceProvider == null)
 
 var logger = serviceProvider.GetService<ILoggerFactory>()
     ?.CreateLogger<Program>();
-logger?.LogDebug("Star");
+logger?.LogDebug("Start");
 
+var dispatcher = CommandUtilities.BuildDispatcher(serviceProvider);
 
-logger?.LogDebug("All done!");
+try
+{
+    //var result = dispatcher.Invoke(args);
+    var result = await dispatcher.InvokeAsync(args);
 
-return 0;
+    logger?.LogDebug("All done!");
+
+    return result;
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+    return -1;
+}
