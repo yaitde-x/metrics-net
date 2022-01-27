@@ -35,6 +35,8 @@ public class XmlMetricsReportParser
             {"Namespace", ProcessNamespaceNode},
             {"NamedType", ProcessTypeNode},
             {"Method", ProcessMemberNode},
+            {"Field", ProcessMemberNode},
+            {"Property", ProcessMemberNode},
             {"Metric", ProcessMetricsNode}
         };
 
@@ -113,7 +115,7 @@ public class XmlMetricsReportParser
         var target = report.Targets[report.Targets.Count - 1];
         var assembly = target.Assemblies[target.Assemblies.Count - 1];
         var ns = assembly.Namespaces[assembly.Namespaces.Count - 1];
-        ns.Types[ns.Types.Count - 1].Methods.Add(node);
+        ns.Types[ns.Types.Count - 1].Members.Add(node);
 
         return node;
     }

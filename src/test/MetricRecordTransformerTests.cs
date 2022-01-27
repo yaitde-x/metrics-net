@@ -44,7 +44,7 @@ public class MetricRecordTransformerTests
                                     Types = new List<CodeType>() {
                                         new CodeType() {
                                             Name = "testtype",
-                                            Methods = new List<CodeMember>() {
+                                            Members = new List<CodeMember>() {
                                                 new CodeMember() {
                                                     Name = "testmember",
                                                     Metrics = new CodeMetrics() {

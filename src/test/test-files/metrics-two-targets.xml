@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="CompanyX.Services.PrintManager.Server.csproj">
+      <Assembly Name="CompanyX.Services.PrintManager.Server, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4340177d7467d9dc">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="73" />
+          <Metric Name="CyclomaticComplexity" Value="153" />
+          <Metric Name="ClassCoupling" Value="77" />
+          <Metric Name="DepthOfInheritance" Value="3" />
+          <Metric Name="SourceLines" Value="1123" />
+          <Metric Name="ExecutableLines" Value="376" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="CompanyX.Services.PrintManager.Server">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="73" />
+              <Metric Name="CyclomaticComplexity" Value="153" />
+              <Metric Name="ClassCoupling" Value="77" />
+              <Metric Name="DepthOfInheritance" Value="3" />
+              <Metric Name="SourceLines" Value="1123" />
+              <Metric Name="ExecutableLines" Value="376" />
+            </Metrics>
+            <Types>
+              <NamedType Name="MgrPrintManager">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="67" />
+                  <Metric Name="CyclomaticComplexity" Value="51" />
+                  <Metric Name="ClassCoupling" Value="41" />
+                  <Metric Name="DepthOfInheritance" Value="3" />
+                  <Metric Name="SourceLines" Value="416" />
+                  <Metric Name="ExecutableLines" Value="146" />
+                </Metrics>
+                <Members>
+                  <Method Name="MgrPrintManager.MgrPrintManager()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="EntyPrinter MgrPrintManager.GetNewPrinter()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="Lazy&lt;ILogManager&gt; MgrPrintManager._logManager" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="36">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="colPrinter MgrPrintManager.GetInstalledPrinters()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="39">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="51" />
+                      <Metric Name="CyclomaticComplexity" Value="10" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="50" />
+                      <Metric Name="ExecutableLines" Value="18" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="colTray MgrPrintManager.GetTrays(string printerName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="89">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.SubmitJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="107">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="92" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.SubmitJob(IPrintable job, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="112">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.SubmitJob(IPrintable job, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="117">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.SubmitJob(IPrintable job, int userId, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="123">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.QueueJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="129">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.QueueJob(IPrintable job, PrintQueuePriority priority)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="134">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="92" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.QueueJob(IPrintable job, PrintQueuePriority priority, int timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="139">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="25" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="byte[] MgrPrintManager.LoadReport(string PhysicalFilename, bool isCustom)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="171">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="50" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="51" />
+                      <Metric Name="ExecutableLines" Value="24" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="byte[] MgrPrintManager.LoadLogo(string PhysicalFilename)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="223">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="58" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="36" />
+                      <Metric Name="ExecutableLines" Value="14" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.SaveReport(byte[] Report, string PhysicalFilename, bool isCustom)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="262">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="33" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.SaveReportLogo(byte[] Logo, string PhysicalFilename)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="288">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool MgrPrintManager.IsCurrent(string PhysicalFilename, bool isCustom, byte[] checksum)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="305">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="52" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="8" />
+                      <Metric Name="SourceLines" Value="44" />
+                      <Metric Name="ExecutableLines" Value="21" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool MgrPrintManager.CanConnect()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="350">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool MgrPrintManager.ChecksumEqual(byte[] a1, byte[] a2)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="355">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="68" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="15" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.PrintJobCallback(object stateInfo)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="378">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List&lt;Dictionary&lt;string, object&gt;&gt; MgrPrintManager.GetPrintQueueData()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="397">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.QueueMockJob(string id, int sleep, bool throwError)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="404">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MgrPrintManager.RunMockJob(string id, int sleep, bool throwError, int timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="410">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="8" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.KillJob(string id, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="416">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.KillAllRunningJobs(int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="421">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void MgrPrintManager.RestartQueueProcessor()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\MgrPrintManager.cs" Line="426">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintJobQueue">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="71" />
+                  <Metric Name="CyclomaticComplexity" Value="81" />
+                  <Metric Name="ClassCoupling" Value="35" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="472" />
+                  <Metric Name="ExecutableLines" Value="157" />
+                </Metrics>
+                <Members>
+                  <Field Name="int PrintJobQueue.JOB_PRUNER_USER" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int PrintJobQueue.JOB_HISTORY_DEPTH" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int PrintJobQueue.MAX_PRINT_JOBS_DEFAULT" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="20">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int PrintJobQueue.DEFAULT_JOB_TIMEOUT_MINUTES" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintJobQueue.max_print_job_var" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentQueue&lt;PrintQueueData&gt; PrintJobQueue._low" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentQueue&lt;PrintQueueData&gt; PrintJobQueue._normal" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentQueue&lt;PrintQueueData&gt; PrintJobQueue._high" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="26">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentQueue&lt;PrintQueueData&gt; PrintJobQueue._terminated" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentDictionary&lt;string, PrintQueueData&gt; PrintJobQueue._running" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="28">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ConcurrentQueue&lt;PrintQueueData&gt; PrintJobQueue._ran" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="object PrintJobQueue._sync_lock" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="31">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Thread PrintJobQueue._serializerThread" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Timer PrintJobQueue._timer" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="33">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="PrintJobSerializer PrintJobQueue._queueProcessor" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="34">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="PrintJobQueue.PrintJobQueue()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="60" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.InitializePrintQueueSubsystem()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="56">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="95" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="PrintJobQueue PrintJobQueue.Instance" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="61">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="PrintJobQueue PrintJobQueue.Instance.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="61">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintJobQueue.Instance.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="61">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="PrintQueueData PrintJobQueue.GetNextJob()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="63">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="57" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="30" />
+                      <Metric Name="ExecutableLines" Value="13" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="int PrintJobQueue.LimitExceededCount" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="94">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="bool PrintJobQueue.WasJobTerminated(PrintQueueData queueData)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="96">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.SetJobComplete(string jobId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="101">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="27" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.EnqueueAndManageQueueSizeToo(ConcurrentQueue&lt;PrintQueueData&gt; queue, PrintQueueData data, int max)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="129">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="68" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.ScrubQueueData(PrintQueueData data)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="147">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus PrintJobQueue.RunJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="152">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus PrintJobQueue.RunJob(IPrintable job, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="157">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus PrintJobQueue.RunJob(IPrintable job, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="162">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="92" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus PrintJobQueue.RunJob(IPrintable job, int userId, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="167">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="19" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int PrintJobQueue.DefaultMillisecsTimeout" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="188">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int PrintJobQueue.DefaultMillisecsTimeout.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="188">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintJobQueue.DefaultMillisecsTimeout.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="188">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int PrintJobQueue.DispatcherSleepInterval" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="190">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int PrintJobQueue.DispatcherSleepInterval.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="190">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintJobQueue.DispatcherSleepInterval.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="190">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="PrintQueueData PrintJobQueue.QueueJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="192">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData PrintJobQueue.QueueJob(IPrintable job, PrintQueuePriority priority)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="197">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData PrintJobQueue.QueueJob(IPrintable job, PrintQueuePriority priority, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="201">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData PrintJobQueue.QueueJob(IPrintable job, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="205">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData PrintJobQueue.QueueJob(IPrintable job, PrintQueuePriority priority, TimeSpan timeout, int userId, bool waitForCompletion = false)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="210">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="29" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string PrintJobQueue.CreateQueueDebugMessage(string message, PrintQueueData queueData)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="240">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData PrintJobQueue.CreateQueueObject(IPrintable job, PrintQueuePriority printQueuePriority, TimeSpan timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="247">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="68" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List&lt;Dictionary&lt;string, object&gt;&gt; PrintJobQueue.GetPrintQueueData()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="260">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="32" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List&lt;Dictionary&lt;string, object&gt;&gt; PrintJobQueue.QueueToViewModels(ConcurrentQueue&lt;PrintQueueData&gt; queue, string queueName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="293">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Dictionary&lt;string, object&gt; PrintJobQueue.CreateNewModelFromPrintQueueData(string queueName, PrintQueueData printQueueData)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="312">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IDictionary&lt;string, int&gt; PrintJobQueue.GetPrintQueueCounts()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="329">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.PruneLongRunningJobs()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="344">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="55" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="15" />
+                      <Metric Name="SourceLines" Value="40" />
+                      <Metric Name="ExecutableLines" Value="15" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.KillJob(string jobId, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="385">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.KillAllRunningJobs(int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="392">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.KillJob(PrintQueueData queueData, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="397">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="60" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="10" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.RestartQueueProcessor()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="416">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.HandleTimer(object source, ElapsedEventArgs e)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="423">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="bool PrintJobQueue.ProcessorIsActive" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="428">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool PrintJobQueue.ProcessorIsActive.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="430">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="90" />
+                          <Metric Name="CyclomaticComplexity" Value="2" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="void PrintJobQueue.RestartProcessorIfRequired()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="433">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.StartProcessor()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="442">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobQueue.ShutdownQueueProcessor()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="449">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="19" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool PrintJobQueue.HasRunningJobs()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="469">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool PrintJobQueue.HasJobs()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="475">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool PrintJobQueue.HasQueuedJobs()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobQueue.cs" Line="481">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="86" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintJobSerializer">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="65" />
+                  <Metric Name="CyclomaticComplexity" Value="14" />
+                  <Metric Name="ClassCoupling" Value="13" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="147" />
+                  <Metric Name="ExecutableLines" Value="56" />
+                </Metrics>
+                <Members>
+                  <Field Name="int PrintJobSerializer._runningJobs" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="object PrintJobSerializer._syncRunningJobCount" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="bool PrintJobSerializer._isRunning" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="PrintJobQueue PrintJobSerializer._jobQueue" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="PrintJobSerializer.PrintJobSerializer(PrintJobQueue jobQueue)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobSerializer.RunJob(object state)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="48" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="62" />
+                      <Metric Name="ExecutableLines" Value="27" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int PrintJobSerializer.MaxPrintJobs" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="85">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int PrintJobSerializer.MaxPrintJobs.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="87">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="5" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="void PrintJobSerializer.Start()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="94">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="51" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="51" />
+                      <Metric Name="ExecutableLines" Value="23" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobSerializer.Stop()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="146">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void PrintJobSerializer.RemoveKilledJob()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintJobSerializer.cs" Line="151">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintQueueStatus">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="84" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="10" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Field Name="string PrintQueueStatus.killed" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintQueueStatus.printing" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintQueueStatus.complete" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintQueueStatus.error" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintQueueStatus.queued" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string PrintQueueStatus.wait_queue" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\PrintQueueStatus.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+              <NamedType Name="RegistrationManager">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="78" />
+                  <Metric Name="CyclomaticComplexity" Value="6" />
+                  <Metric Name="ClassCoupling" Value="9" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="63" />
+                  <Metric Name="ExecutableLines" Value="13" />
+                </Metrics>
+                <Members>
+                  <Field Name="MgrPrintManager RegistrationManager._MgrPrintManager" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="ObjRef RegistrationManager.RegisterObject(MarshalByRefObject objectToMarshal, string objectName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool RegistrationManager.DisconnectObject(MarshalByRefObject objectToDisconnect)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void RegistrationManager.RegisterServices()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="54">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void RegistrationManager.UnRegisterServices()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="60">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void RegistrationManager.Dispose()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Server\RegistrationManager.cs" Line="68">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+    <Target Name="CompanyX.Services.PrintManager.Common.csproj">
+      <Assembly Name="CompanyX.Services.PrintManager.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4340177d7467d9dc">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="90" />
+          <Metric Name="CyclomaticComplexity" Value="100" />
+          <Metric Name="ClassCoupling" Value="35" />
+          <Metric Name="DepthOfInheritance" Value="2" />
+          <Metric Name="SourceLines" Value="455" />
+          <Metric Name="ExecutableLines" Value="87" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="CompanyX.Services.PrintManager.Common">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="90" />
+              <Metric Name="CyclomaticComplexity" Value="100" />
+              <Metric Name="ClassCoupling" Value="35" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="455" />
+              <Metric Name="ExecutableLines" Value="87" />
+            </Metrics>
+            <Types>
+              <NamedType Name="colPrinter">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="93" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="44" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Method Name="colPrinter.colPrinter()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colPrinter.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="EntyPrinter colPrinter.this[int index]" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colPrinter.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="EntyPrinter colPrinter.this[int index].get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colPrinter.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="93" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="4" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="void colPrinter.Add(EntyPrinter item)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colPrinter.cs" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void colPrinter.Remove(EntyPrinter item)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colPrinter.cs" Line="46">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="colTray">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="93" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="52" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Method Name="colTray.colTray()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="EntyTray colTray.this[int index]" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="EntyTray colTray.this[int index].get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="93" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="4" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="void colTray.Add(EntyTray item)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void colTray.Remove(EntyTray item)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="46">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void colTray.Clear()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityCollection\colTray.cs" Line="54">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="EntyPrinter">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="90" />
+                  <Metric Name="CyclomaticComplexity" Value="6" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="37" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Field Name="string EntyPrinter._strName" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string EntyPrinter._strPath" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="colTray EntyPrinter._PrinterTrays" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="EntyPrinter.EntyPrinter()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string EntyPrinter.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="98" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string EntyPrinter.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="26">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void EntyPrinter.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string EntyPrinter.Path" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="98" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string EntyPrinter.Path.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="32">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void EntyPrinter.Path.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="33">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="colTray EntyPrinter.Trays" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="36">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="colTray EntyPrinter.Trays.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyPrinter.cs" Line="38">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="EntyTray">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="92" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="29" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Field Name="string EntyTray._strName" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="EntyTray.EntyTray()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="EntyTray.EntyTray(string TrayName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="20">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string EntyTray.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="98" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string EntyTray.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="29">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void EntyTray.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\Entity\EntyTray.cs" Line="30">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="IMgrPrintManager">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="19" />
+                  <Metric Name="ClassCoupling" Value="7" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="28" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="colPrinter IMgrPrintManager.GetInstalledPrinters()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="colTray IMgrPrintManager.GetTrays(string name)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.SubmitJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.SubmitJob(IPrintable job, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.QueueJob(IPrintable job)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.QueueJob(IPrintable job, PrintQueuePriority priority)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.QueueJob(IPrintable job, PrintQueuePriority priority, int timeoutMinutes)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="byte[] IMgrPrintManager.LoadReport(string PhysicalFileName, bool isCustom)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="byte[] IMgrPrintManager.LoadLogo(string PhysicalFileName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="20">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.SaveReport(byte[] Report, string PhysicalFileName, bool isCustom)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.SaveReportLogo(byte[] Logo, string PhysicalFileName)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool IMgrPrintManager.IsCurrent(string PhysicalFileName, bool isCustom, byte[] checksum)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool IMgrPrintManager.CanConnect()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List&lt;Dictionary&lt;string, object&gt;&gt; IMgrPrintManager.GetPrintQueueData()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="26">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.QueueMockJob(string id, int sleep, bool throwError)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="28">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IMgrPrintManager.RunMockJob(string id, int sleep, bool throwError, int timeout)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.KillJob(string id, int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.KillAllRunningJobs(int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="31">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IMgrPrintManager.RestartQueueProcessor()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\FacadeInterface\IMgrPrintManager.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IPrintable">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="7" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="10" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="JobStatus IPrintable.Print()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus IPrintable.Print(int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string IPrintable.Id" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IPrintable.Id.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IPrintable.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IPrintable.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IPrintable.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IPrintable.Description" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IPrintable.Description.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IPrintable.Description.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\IPrintable.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="IPrinter">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="32" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Property Name="string IPrinter.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IPrinter.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IPrinter.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="16">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IPrinter.Path" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IPrinter.Path.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="24">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IPrinter.Path.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="25">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="colTray IPrinter.Trays" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="31">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="colTray IPrinter.Trays.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\IPrinter.cs" Line="33">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="ITray">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="14" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Property Name="string ITray.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\ITray.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string ITray.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\ITray.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void ITray.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\EntityInterface\ITray.cs" Line="16">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="JobStatus">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="90" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="32" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Field Name="int JobStatus._statusCode" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="string JobStatus._statusMessage" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="JobStatus.JobStatus(int statusCode, string statusMessage)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int JobStatus.StatusCode" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int JobStatus.StatusCode.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="23">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="4" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string JobStatus.StatusMessage" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string JobStatus.StatusMessage.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\JobStatus.cs" Line="31">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="4" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="MockIPrintable">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="70" />
+                  <Metric Name="CyclomaticComplexity" Value="15" />
+                  <Metric Name="ClassCoupling" Value="13" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="57" />
+                  <Metric Name="ExecutableLines" Value="26" />
+                </Metrics>
+                <Members>
+                  <Field Name="ICollection MockIPrintable._trackingList" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="bool MockIPrintable._throwErrorAfterSleep" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ILogManager MockIPrintable._logManager" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int MockIPrintable._fixedMillis" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="MockIPrintable.MockIPrintable(string id, int fixedMillis = -1, ICollection trackingList = null, bool throwErrorAfterSleep = false, ILogManager logManager = null)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="58" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MockIPrintable.Print()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="33">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="JobStatus MockIPrintable.Print(int userId)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="38">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="57" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="25" />
+                      <Metric Name="ExecutableLines" Value="13" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string MockIPrintable.Id" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="64">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string MockIPrintable.Id.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="64">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void MockIPrintable.Id.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="64">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string MockIPrintable.Name" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="65">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string MockIPrintable.Name.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="65">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void MockIPrintable.Name.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="65">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string MockIPrintable.Description" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="66">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string MockIPrintable.Description.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="66">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void MockIPrintable.Description.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\MockIPrintable.cs" Line="66">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintJobStatusCode">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="91" />
+                  <Metric Name="CyclomaticComplexity" Value="0" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+                <Members>
+                  <Field Name="int PrintJobStatusCode.SUCCESS" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int PrintJobStatusCode.FAILURE" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int PrintJobStatusCode.TIMEOUT" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintQueueData">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="83" />
+                  <Metric Name="CyclomaticComplexity" Value="24" />
+                  <Metric Name="ClassCoupling" Value="9" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="25" />
+                  <Metric Name="ExecutableLines" Value="24" />
+                </Metrics>
+                <Members>
+                  <Method Name="PrintQueueData.PrintQueueData()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="PrintQueueData.PrintQueueData(IDictionary&lt;string, object&gt; model)" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string PrintQueueData.Description" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string PrintQueueData.Description.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="21">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.Description.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="21">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string PrintQueueData.PrintStatus" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string PrintQueueData.PrintStatus.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="22">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.PrintStatus.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="22">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string PrintQueueData.Priority" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string PrintQueueData.Priority.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="23">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.Priority.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="23">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string PrintQueueData.ErrorMessage" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string PrintQueueData.ErrorMessage.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="24">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.ErrorMessage.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="24">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="Exception PrintQueueData.Exception" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Exception PrintQueueData.Exception.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="25">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.Exception.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="25">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="IPrintable PrintQueueData.Job" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="26">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IPrintable PrintQueueData.Job.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="26">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.Job.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="26">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="Thread PrintQueueData.JobThread" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Thread PrintQueueData.JobThread.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.JobThread.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="JobStatus PrintQueueData.JobStatus" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="28">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="JobStatus PrintQueueData.JobStatus.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="28">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.JobStatus.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="28">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime PrintQueueData.StartedAt" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime PrintQueueData.StartedAt.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="29">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.StartedAt.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="29">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime PrintQueueData.CompletedAt" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime PrintQueueData.CompletedAt.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="30">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.CompletedAt.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="30">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int PrintQueueData.TimeoutOverride" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int PrintQueueData.TimeoutOverride.get" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="32">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void PrintQueueData.TimeoutOverride.set" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueueData.cs" Line="32">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="97" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="PrintQueuePriority">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Field Name="PrintQueuePriority.Low" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="PrintQueuePriority.Normal" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="PrintQueuePriority.High" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\PrintQueuePriority.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+              <NamedType Name="TempFileCleaner">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="57" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="10" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="38" />
+                  <Metric Name="ExecutableLines" Value="13" />
+                </Metrics>
+                <Members>
+                  <Method Name="void TempFileCleaner.DeleteTempFile()" File="c:\git\fusion1\Source\CompanyX.BaseArchitecture\Services\CompanyX.Services.PrintManager.Common\TempFileCleaner.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="57" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="34" />
+                      <Metric Name="ExecutableLines" Value="13" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

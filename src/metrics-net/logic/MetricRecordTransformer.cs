@@ -14,7 +14,7 @@ public class MetricRecordTransformer
                 {
                     foreach (var type in ns.Types)
                     {
-                        foreach (var member in type.Methods)
+                        foreach (var member in type.Members)
                         {
                             var record = new CodeMetricRecord(DateTime.Now,
                                                             target.Name ?? string.Empty,

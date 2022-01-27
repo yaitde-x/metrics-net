@@ -28,9 +28,11 @@
 
   <ItemGroup>
     <Content Remove="test-files\metrics.xml" />
+    <Content Remove="test-files\metrics-two-targets.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="test-files\metrics.xml" />
+    <EmbeddedResource Include="test-files\metrics-two-targets.xml" />
   </ItemGroup>
 </Project>  

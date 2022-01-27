@@ -34,7 +34,7 @@ public class CodeType : ICodeNode
 {
     public string? Name { get; set; }
     public CodeMetrics? Metrics { get; set; }
-    public List<CodeMember> Methods { get; set; } = new List<CodeMember>();
+    public List<CodeMember> Members { get; set; } = new List<CodeMember>();
 }
 
 public class CodeMember : ICodeNode
