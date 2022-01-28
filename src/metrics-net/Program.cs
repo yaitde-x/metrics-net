@@ -29,7 +29,7 @@ var dispatcher = CommandUtilities.BuildDispatcher(serviceProvider);
 try
 {
     //var result = dispatcher.Invoke(args);
-    var result = await dispatcher.InvokeAsync(args);
+    var result = dispatcher.Invoke(args);
 
     logger?.LogDebug("All done!");
 

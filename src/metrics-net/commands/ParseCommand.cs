@@ -30,7 +30,7 @@ public class ParseCommand : Command
                                                                             outputTypeOption, formatOption, sqlOption, tableOption);
     }
 
-    public async Task Handle(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
+    public async Task HandleAsync(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
     {
         using var instream = File.OpenRead(inputFile.Trim());
         var parser = new XmlMetricsReportParser();
@@ -131,5 +131,51 @@ public class ParseCommand : Command
         sb.AppendLine("           ,@linesOfCode)");
 
         return sb.ToString();
+    }
+
+    public void Handle(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
+    {
+        using var instream = File.OpenRead(inputFile.Trim());
+        var parser = new XmlMetricsReportParser();
+        var codeReport = parser.Parse(instream);
+
+        if (!string.IsNullOrEmpty(sqlConnectionString) && string.IsNullOrEmpty(tableName))
+        {
+            throw new ArgumentException("to use the sql option, need to pass --table as well");
+        }
+
+        if (!string.IsNullOrEmpty(outputFile))
+        {
+            using var outStream = File.OpenWrite(outputFile);
+            using var writer = new StreamWriter(outStream);
+
+            if (outputType.ToLower().Equals("object"))
+            {
+                 writer.Write(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
+            }
+            else if (outputType.ToLower().Equals("record"))
+            {
+                var transformer = new MetricRecordTransformer();
+                var records = transformer.Transform(codeReport);
+
+                 writer.Write(JsonConvert.SerializeObject(records, Formatting.Indented));
+            }
+        }
+
+        if (!string.IsNullOrEmpty(sqlConnectionString))
+        {
+            var conn = new SqlConnection(sqlConnectionString);
+            conn.Open();
+
+            var transformer = new MetricRecordTransformer();
+            var records = transformer.Transform(codeReport);
+
+            foreach (var record in records)
+            {
+                var command = CreateInsertCommand(conn, record);
+                var recordsAffected = command.ExecuteNonQuery();
+            }
+
+        }
     }
 }
