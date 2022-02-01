@@ -86,7 +86,7 @@ public class ParseCommand : Command
         command.Parameters.Add(CreateParameter(command, "module", record.Assembly));
         command.Parameters.Add(CreateParameter(command, "namespace", record.Namespace));
         command.Parameters.Add(CreateParameter(command, "type", record.Type));
-        command.Parameters.Add(CreateParameter(command, "member", record.Member));
+        command.Parameters.Add(CreateParameter(command, "signature", record.Signature));
         command.Parameters.Add(CreateParameter(command, "maintainabilityIndex", record.MaintainabilityIndex));
         command.Parameters.Add(CreateParameter(command, "cyclomaticComplexity", record.CyclomaticComplexity));
         command.Parameters.Add(CreateParameter(command, "classCoupling", record.ClassCoupling));
