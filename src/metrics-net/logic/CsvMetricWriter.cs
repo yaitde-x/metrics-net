@@ -23,6 +23,6 @@ public class CsvMetricWriter
     }
     private string ToCsvRecord(CodeMetricRecord record)
     {
-        return $"\"{record.Period}\",\"{record.Target}\",\"{record.Assembly}\",\"{record.Namespace}\",\"{record.Type}\",\"{record.Member}\",{record.MaintainabilityIndex},{record.CyclomaticComplexity},{record.ClassCoupling},{record.DepthOfInheritance},{record.LinesOfCode}";
+        return $"\"{record.Period}\",\"{record.Target}\",\"{record.Assembly}\",\"{record.Namespace}\",\"{record.Type}\",\"{record.Signature}\",{record.MaintainabilityIndex},{record.CyclomaticComplexity},{record.ClassCoupling},{record.DepthOfInheritance},{record.LinesOfCode}";
     }
 }

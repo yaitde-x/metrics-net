@@ -14,7 +14,7 @@ public class CsvMetricWriterTests
     public async Task HappyPath()
     {
         var testObject = new CsvMetricWriter();
-        var model = new CodeMetricRecord(DateTime.Parse("2020-01-01"), "target", "assembly", "namespace", "type", "member")
+        var model = new CodeMetricRecord(DateTime.Parse("2020-01-01"), "target", "assembly", "namespace", "type", "member", "simple","name","return", Language.CSharp)
         {
             MaintainabilityIndex = 1,
             CyclomaticComplexity = 2,

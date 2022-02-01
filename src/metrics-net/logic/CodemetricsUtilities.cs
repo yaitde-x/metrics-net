@@ -30,7 +30,7 @@ public static class CodemetricsUtilities
         var memberName = methodSignature.Substring(0, paramStart).Split(new char[] { '.' }, StringSplitOptions.TrimEntries)[1].Trim();
 
         var simplified =$"{memberName}({paramsSplit}) : {returnType}";
-        return new MethodData(Language.VBNet, methodSignature, simplified, memberName);
+        return new MethodData(Language.VBNet, methodSignature, simplified, memberName, returnType);
     }
 
     private static MethodData ProcessCSharpSignature(string methodSignature)
@@ -50,7 +50,7 @@ public static class CodemetricsUtilities
 
         var simplified = $"{memberName}({paramsSplit}) : {returnType}";
 
-        return new MethodData(Language.CSharp, methodSignature, simplified, memberName);
+        return new MethodData(Language.CSharp, methodSignature, simplified, memberName, returnType);
     }
 
     private static string ExtractCSharpMemberName(string methodSignature)

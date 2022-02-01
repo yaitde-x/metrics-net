@@ -16,12 +16,21 @@ public class MetricRecordTransformer
                     {
                         foreach (var member in type.Members)
                         {
+                            var data = CodemetricsUtilities.ProcessMethodSignature(member.Name);
+                            if (data == null)
+                                continue;
+
                             var record = new CodeMetricRecord(DateTime.Now,
                                                             target.Name ?? string.Empty,
                                                             assembly.Name ?? string.Empty,
                                                             ns.Name ?? string.Empty,
                                                             type.Name ?? string.Empty,
-                                                            member.Name ?? string.Empty);
+                                                            member.Name ?? string.Empty,
+                                                            data.SimplifiedSignature,
+                                                            data.MemberName,
+                                                            data.ReturnType,
+                                                            data.Language
+                                                            );
 
                             if (member.Metrics != null)
                             {

@@ -112,7 +112,10 @@ public class ParseCommand : Command
         sb.AppendLine("           ,[Module]");
         sb.AppendLine("           ,[Namespace]");
         sb.AppendLine("           ,[Type]");
-        sb.AppendLine("           ,[Member]");
+        sb.AppendLine("           ,[Signature]");
+        sb.AppendLine("           ,[MemberName]");
+        sb.AppendLine("           ,[Raw]");
+        sb.AppendLine("           ,[ReturnType]");
         sb.AppendLine("           ,[MaintainabilityIndex]");
         sb.AppendLine("           ,[CyclomaticComplexity]");
         sb.AppendLine("           ,[ClassCoupling]");
@@ -123,7 +126,10 @@ public class ParseCommand : Command
         sb.AppendLine("           ,@module");
         sb.AppendLine("           ,@namespace");
         sb.AppendLine("           ,@type");
-        sb.AppendLine("           ,@member");
+        sb.AppendLine("           ,@signature");
+        sb.AppendLine("           ,@memberName");
+        sb.AppendLine("           ,@raw");
+        sb.AppendLine("           ,@returnType");
         sb.AppendLine("           ,@maintainabilityIndex");
         sb.AppendLine("           ,@cyclomaticComplexity");
         sb.AppendLine("           ,@classCoupling");

@@ -20,7 +20,7 @@ public class MetricRecordTransformerTests
         Assert.Equal("testassembly", record.Assembly);
         Assert.Equal("testnamespace", record.Namespace);
         Assert.Equal("testtype", record.Type);
-        Assert.Equal("testmember", record.Member);
+        Assert.Equal("testmember", record.Signature);
         Assert.Equal(1, record.MaintainabilityIndex);
         Assert.Equal(2, record.CyclomaticComplexity);
         Assert.Equal(3, record.ClassCoupling);

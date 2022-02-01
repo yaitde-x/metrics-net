@@ -39,6 +39,7 @@ public class CodeType : ICodeNode
 
 public class CodeMember : ICodeNode
 {
+    public Language? Language { get; set; }
     public string? Name { get; set; }
     public CodeMetrics? Metrics { get; set; }
 }
