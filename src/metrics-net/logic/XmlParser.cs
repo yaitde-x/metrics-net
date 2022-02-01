@@ -1,7 +1,6 @@
 using System.Xml;
 
 namespace MetricsNet;
-
 public class XmlMetricsReportParser
 {
     // private class CodeMetricsReportContext
