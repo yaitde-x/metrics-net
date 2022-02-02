@@ -74,4 +74,38 @@ public class SignatureProcessingTests
         Assert.Equal("SomeMethod(CustomType, int) : string", result?.SimplifiedSignature);
 
     }
+    
+        [Fact]
+    public void VBNetGenericParamsAndGenericReturnType()
+    {
+        var testCase = "Function SomeType.SomeMethod(Of T)(someParam As T, intParam As int) As Blah(Of T)";
+        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+
+        Assert.NotNull(result);
+        Assert.Equal("SomeMethod<T>(T, int) : Blah<T>", result?.SimplifiedSignature);
+
+    }
+
+    [Fact]
+    public void VBNetRealWorldFail()
+    {
+        var testCase = "Property AnotherType._someProperty As Lazy(Of SomeType)";
+        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+
+        Assert.NotNull(result);
+        Assert.Equal("_someProperty : Lazy<SomeType>", result?.SimplifiedSignature);
+
+    }
+
+    [Fact]
+    public void CSharpRealWorlFail()
+    {
+        var testCase = "Lazy<SomeType> AnotherType._someProperty";
+        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+
+        Assert.NotNull(result);
+        Assert.Equal("_someProperty : Lazy<SomeType>", result?.SimplifiedSignature);
+
+    }
+    //"Lazy<ILogManager> MgrPrintManager._logManager"
 }

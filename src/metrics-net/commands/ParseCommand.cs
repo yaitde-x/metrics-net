@@ -176,7 +176,7 @@ public class ParseCommand : Command
             var transformer = new MetricRecordTransformer();
             var records = transformer.Transform(codeReport);
 
-            foreach (var record in records)
+            foreach (var record in records.Take(100))
             {
                 var command = CreateInsertCommand(conn, record);
                 var recordsAffected = command.ExecuteNonQuery();
