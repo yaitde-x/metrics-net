@@ -113,7 +113,7 @@ public class XmlMetricsReportParser
 
         var node = new CodeMember()
         {
-            Name = memberData.SimplifiedSignature,
+            Name = memberData.MethodSignature,
         };
 
         var target = report.Targets[report.Targets.Count - 1];

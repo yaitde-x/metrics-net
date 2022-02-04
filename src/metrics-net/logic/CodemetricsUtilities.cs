@@ -10,9 +10,14 @@ public static class CodemetricsUtilities
             return null;
 
         var language = GetLanguageFromSignature(methodSignature);
+        return CreateMethodData(language, methodSignature);
+        //return language == Language.VBNet ? ProcessVBNetSignature(methodSignature) : ProcessCSharpSignature(methodSignature);
 
-        return language == Language.VBNet ? ProcessVBNetSignature(methodSignature) : ProcessCSharpSignature(methodSignature);
+    }
 
+    private static MethodData CreateMethodData(Language language, string methodSignature)
+    {
+        return new MethodData(language, methodSignature, string.Empty, string.Empty, string.Empty);
     }
 
     enum SignatureType

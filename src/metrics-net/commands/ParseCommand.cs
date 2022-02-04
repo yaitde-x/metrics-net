@@ -2,7 +2,9 @@
 using System.CommandLine;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Text;
+using FastMember;
 using Newtonsoft.Json;
 
 namespace MetricsNet;
@@ -76,11 +78,12 @@ public class ParseCommand : Command
         }
     }
 
-    private IDbCommand CreateInsertCommand(IDbConnection conn, CodeMetricRecord record) {
+    private IDbCommand CreateInsertCommand(IDbConnection conn, CodeMetricRecord record)
+    {
         var command = conn.CreateCommand();
 
         command.CommandText = GetInsertTemplate();
-        command.CommandType =  CommandType.Text;
+        command.CommandType = CommandType.Text;
 
         command.Parameters.Add(CreateParameter(command, "period", record.Period));
         command.Parameters.Add(CreateParameter(command, "module", record.Assembly));
@@ -92,11 +95,12 @@ public class ParseCommand : Command
         command.Parameters.Add(CreateParameter(command, "classCoupling", record.ClassCoupling));
         command.Parameters.Add(CreateParameter(command, "depthOfInheritance", record.DepthOfInheritance));
         command.Parameters.Add(CreateParameter(command, "linesOfCode", record.LinesOfCode));
-        
+
         return command;
     }
 
-    private IDbDataParameter CreateParameter(IDbCommand command, string parameterName, object value){
+    private IDbDataParameter CreateParameter(IDbCommand command, string parameterName, object value)
+    {
         var parameter = command.CreateParameter();
         parameter.ParameterName = parameterName;
         parameter.Value = value;
@@ -157,30 +161,79 @@ public class ParseCommand : Command
 
             if (outputType.ToLower().Equals("object"))
             {
-                 writer.Write(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
+                writer.Write(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
             }
             else if (outputType.ToLower().Equals("record"))
             {
                 var transformer = new MetricRecordTransformer();
                 var records = transformer.Transform(codeReport);
 
-                 writer.Write(JsonConvert.SerializeObject(records, Formatting.Indented));
+                writer.Write(JsonConvert.SerializeObject(records, Formatting.Indented));
             }
         }
 
         if (!string.IsNullOrEmpty(sqlConnectionString))
         {
             var conn = new SqlConnection(sqlConnectionString);
+            var loader = new SqlBulkCopy(conn);
+
             conn.Open();
 
             var transformer = new MetricRecordTransformer();
             var records = transformer.Transform(codeReport);
 
-            foreach (var record in records.Take(100))
+/*
+Period = period;
+        Assembly = assembly;
+        Target = target;
+        Namespace = ns;
+        Type = type;
+        Signature = simplified;  
+        MemberName = memberName;
+        Raw = raw;
+        ReturnType = returnType;
+        Language = language;
+*/
+            var timer = new Stopwatch();
+            timer.Start();
+
+            using (var bcp = new SqlBulkCopy(conn))
+            using (var reader = ObjectReader
+                                    .Create(records, 
+                                    "Period", "Assembly", "Target", "Namespace", "Type", "Signature", "MemberName", 
+                                    "Raw", "ReturnType", "Language", "MaintainabilityIndex", "CyclomaticComplexity",
+                                    "ClassCoupling", "DepthOfInheritance", "LinesOfCode"))
             {
-                var command = CreateInsertCommand(conn, record);
-                var recordsAffected = command.ExecuteNonQuery();
+                bcp.DestinationTableName = "[raw-metrics]";
+
+                bcp.ColumnMappings.Add("Period", "Period");
+                bcp.ColumnMappings.Add("Assembly", "Module");
+                bcp.ColumnMappings.Add("Namespace", "Namespace");
+                bcp.ColumnMappings.Add("Type", "Type");
+                bcp.ColumnMappings.Add("Signature", "Member");
+                bcp.ColumnMappings.Add("MemberName", "MemberName");
+                bcp.ColumnMappings.Add("Raw", "Raw");
+                bcp.ColumnMappings.Add("ReturnType", "ReturnType");
+                bcp.ColumnMappings.Add("Language", "Language");
+                bcp.ColumnMappings.Add("MaintainabilityIndex", "MaintainabilityIndex");
+                bcp.ColumnMappings.Add("CyclomaticComplexity", "CyclomaticComplexity");
+                bcp.ColumnMappings.Add("ClassCoupling", "ClassCoupling");
+                bcp.ColumnMappings.Add("DepthOfInheritance", "DepthOfInheritance");
+                bcp.ColumnMappings.Add("LinesOfCode", "LinesOfCode");
+
+
+                bcp.WriteToServer(reader);
             }
+
+            timer.Stop();
+            Console.WriteLine($"Time to load: {timer.ElapsedMilliseconds}");
+            
+            // loader.WriteToServerAsync()
+            // foreach (var record in records.Take(100))
+            // {
+            //     var command = CreateInsertCommand(conn, record);
+            //     var recordsAffected = command.ExecuteNonQuery();
+            // }
 
         }
     }
