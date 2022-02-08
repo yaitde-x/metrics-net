@@ -16,7 +16,7 @@ public class MetricRecordTransformer
                     {
                         foreach (var member in type.Members)
                         {
-                            var data = CodemetricsUtilities.ProcessMethodSignature(member.Name);
+                            var data = CodeMetricsUtilities.ProcessMethodSignature(member.Name);
                             if (data == null)
                                 continue;
 

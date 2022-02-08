@@ -8,7 +8,7 @@ public class SignatureProcessingTests
     public void CSharpNoParamsNoReturnType()
     {
         var testCase = "void SomeType.SomeMethod()";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal(Language.CSharp, result?.Language);
@@ -22,7 +22,7 @@ public class SignatureProcessingTests
     public void CSharpOneParamWithReturnType()
     {
         var testCase = "int SomeType.SomeMethod(string someParam)";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("SomeMethod(string) : int", result?.SimplifiedSignature);
@@ -33,7 +33,7 @@ public class SignatureProcessingTests
     public void CSharpTwoParamsWithReturnType()
     {
         var testCase = "string  SomeType.SomeMethod(CustomType  someParam, int intParam )";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("SomeMethod(CustomType, int) : string", result?.SimplifiedSignature);
@@ -44,7 +44,7 @@ public class SignatureProcessingTests
     public void VBNetNoParamsNoReturnType()
     {
         var testCase = "Sub SomeType.SomeMethod()";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal(Language.VBNet, result?.Language);
@@ -57,7 +57,7 @@ public class SignatureProcessingTests
     public void VBNetOneParamWithReturnType()
     {
         var testCase = "Function SomeType.SomeMethod(someParam as string) as Integer";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("SomeMethod(string) : Integer", result?.SimplifiedSignature);
@@ -68,7 +68,7 @@ public class SignatureProcessingTests
     public void VBNetTwoParamsWithReturnType()
     {
         var testCase = "Function SomeType.SomeMethod(someParam As CustomType, intParam As int) As string";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("SomeMethod(CustomType, int) : string", result?.SimplifiedSignature);
@@ -79,7 +79,7 @@ public class SignatureProcessingTests
     public void VBNetGenericParamsAndGenericReturnType()
     {
         var testCase = "Function SomeType.SomeMethod(Of T)(someParam As T, intParam As int) As Blah(Of T)";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("SomeMethod<T>(T, int) : Blah<T>", result?.SimplifiedSignature);
@@ -90,7 +90,7 @@ public class SignatureProcessingTests
     public void VBNetRealWorldFail()
     {
         var testCase = "Property AnotherType._someProperty As Lazy(Of SomeType)";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("_someProperty : Lazy<SomeType>", result?.SimplifiedSignature);
@@ -101,7 +101,7 @@ public class SignatureProcessingTests
     public void CSharpRealWorlFail()
     {
         var testCase = "Lazy<SomeType> AnotherType._someProperty";
-        var result = CodemetricsUtilities.ProcessMethodSignature(testCase);
+        var result = CodeMetricsUtilities.ProcessMethodSignature(testCase);
 
         Assert.NotNull(result);
         Assert.Equal("_someProperty : Lazy<SomeType>", result?.SimplifiedSignature);

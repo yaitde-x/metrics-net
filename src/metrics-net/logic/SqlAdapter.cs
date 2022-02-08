@@ -3,9 +3,10 @@ namespace MetricsNet;
 
 public class SqlAdapter : IDisposable {
     private bool disposedValue;
+    private string _connectionString;
 
     public SqlAdapter(string connectionString) {
-
+        _connectionString = connectionString;
     }
 
     protected virtual void Dispose(bool disposing)

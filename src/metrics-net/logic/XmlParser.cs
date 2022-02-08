@@ -106,7 +106,7 @@ public class XmlMetricsReportParser
 
     private ICodeNode? ProcessMemberNode(XmlTextReader reader, CodeMetricsReport report, ICodeNode? activeNode)
     {
-        var memberData = CodemetricsUtilities.ProcessMethodSignature(reader.GetAttribute("Name"));
+        var memberData = CodeMetricsUtilities.ProcessMethodSignature(reader.GetAttribute("Name"));
 
         if (memberData == null)
             return null;

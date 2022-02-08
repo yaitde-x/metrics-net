@@ -2,7 +2,7 @@ using System.Text;
 
 namespace MetricsNet;
 
-public static class CodemetricsUtilities
+public static class CodeMetricsUtilities
 {
     public static MethodData? ProcessMethodSignature(string? methodSignature)
     {

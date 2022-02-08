@@ -6,6 +6,7 @@ using Microsoft.Extensions.FileProviders;
 using Xunit;
 
 namespace MetricsNet;
+
 public class XmlParsingTests
 {
     [Fact]

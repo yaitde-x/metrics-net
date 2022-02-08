@@ -9,6 +9,8 @@ public static class CommandUtilities {
     public static IServiceCollection AddCliCommands(this IServiceCollection services)
     {
         services.AddSingleton<Command, ParseCommand>();
+        services.AddSingleton<Command, StackTraceCommand>();
+        
         return services;
     }
 
