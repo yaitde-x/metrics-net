@@ -3,23 +3,6 @@ using System.Xml;
 namespace MetricsNet;
 public class XmlMetricsReportParser
 {
-    // private class CodeMetricsReportContext
-    // {
-
-    //     public CodeMetricsReportContext(CodeMetricsReport report)
-    //     {
-    //         Report = report;
-    //     }
-    //     public CodeMetricsReport Report { get; }
-    //     public CodeTarget? CurrentTarget { get; set; }
-    //     public CodeAssembly? CurrentAssembly { get; set; }
-    //     public CodeNamespace? CurrentNamespace { get; set; }
-    //     public CodeType? CurrentType { get; set; }
-    //     public CodeMember? CurrentMember { get; set; }
-
-    //     public ICodeNode? CurrentNode { get; set; }
-
-    // }
 
     public CodeMetricsReport Parse(Stream? stream)
     {

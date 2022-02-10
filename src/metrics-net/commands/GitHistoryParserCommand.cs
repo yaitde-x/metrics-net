@@ -9,10 +9,10 @@ using Newtonsoft.Json;
 
 namespace MetricsNet;
 
-public class ParseCommand : Command
+public class GitParseHistoryCommand : Command
 {
-    public ParseCommand()
-        : base("parse", "parse and xml file")
+    public GitParseHistoryCommand()
+        : base("gp", "parse git commit history log")
     {
         var inputFileOption = new Option<string>(new string[] { "--input", "-i" }, "path to input file") { IsRequired = true };
         var outputFileOption = new Option<string?>(new string[] { "--output", "-o" }, () => "", "path to output file");
@@ -35,8 +35,8 @@ public class ParseCommand : Command
     public void Handle(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
     {
         using var instream = File.OpenRead(inputFile.Trim());
-        var parser = new XmlMetricsReportParser();
-        var codeReport = parser.Parse(instream);
+        var parser = new GitCommitHistoryParser();
+        var commits = parser.Parse(instream).GetAwaiter().GetResult();
 
         if (!string.IsNullOrEmpty(sqlConnectionString) && string.IsNullOrEmpty(tableName))
         {
@@ -50,14 +50,11 @@ public class ParseCommand : Command
 
             if (outputType.ToLower().Equals("object"))
             {
-                writer.Write(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
+                writer.Write(JsonConvert.SerializeObject(commits, Formatting.Indented));
             }
             else if (outputType.ToLower().Equals("record"))
             {
-                var transformer = new MetricRecordTransformer();
-                var records = transformer.Transform(codeReport);
-
-                writer.Write(JsonConvert.SerializeObject(records, Formatting.Indented));
+                throw new NotImplementedException();
             }
         }
 
@@ -69,40 +66,33 @@ public class ParseCommand : Command
             conn.Open();
 
             var transformer = new MetricRecordTransformer();
-            var records = transformer.Transform(codeReport);
             var timer = new Stopwatch();
             timer.Start();
 
             using (var bcp = new SqlBulkCopy(conn))
             using (var reader = ObjectReader
-                                    .Create(records, 
-                                    "Period", "Assembly", "Target", "Namespace", "Type", "Signature", "MemberName", 
-                                    "Raw", "ReturnType", "Language", "MaintainabilityIndex", "CyclomaticComplexity",
-                                    "ClassCoupling", "DepthOfInheritance", "LinesOfCode"))
+                                    .Create(commits, 
+                                    "CommitDate", "Author", "ChangeType", "SourceFile"))
             {
                 bcp.DestinationTableName = tableName;
 
-                bcp.ColumnMappings.Add("Period", "Period");
-                bcp.ColumnMappings.Add("Assembly", "Module");
-                bcp.ColumnMappings.Add("Namespace", "Namespace");
-                bcp.ColumnMappings.Add("Type", "Type");
-                bcp.ColumnMappings.Add("Signature", "Member");
-                bcp.ColumnMappings.Add("MemberName", "MemberName");
-                bcp.ColumnMappings.Add("Raw", "Raw");
-                bcp.ColumnMappings.Add("ReturnType", "ReturnType");
-                bcp.ColumnMappings.Add("Language", "Language");
-                bcp.ColumnMappings.Add("MaintainabilityIndex", "MaintainabilityIndex");
-                bcp.ColumnMappings.Add("CyclomaticComplexity", "CyclomaticComplexity");
-                bcp.ColumnMappings.Add("ClassCoupling", "ClassCoupling");
-                bcp.ColumnMappings.Add("DepthOfInheritance", "DepthOfInheritance");
-                bcp.ColumnMappings.Add("LinesOfCode", "LinesOfCode");
-
+                bcp.ColumnMappings.Add("CommitDate", "CommitDate");
+                bcp.ColumnMappings.Add("Author", "Author");
+                bcp.ColumnMappings.Add("ChangeType", "ChangeType");
+                bcp.ColumnMappings.Add("SourceFile", "SourceFile");
 
                 bcp.WriteToServer(reader);
             }
 
             timer.Stop();
             Console.WriteLine($"Time to load: {timer.ElapsedMilliseconds}");
+
+            // loader.WriteToServerAsync()
+            // foreach (var record in records.Take(100))
+            // {
+            //     var command = CreateInsertCommand(conn, record);
+            //     var recordsAffected = command.ExecuteNonQuery();
+            // }
 
         }
     }

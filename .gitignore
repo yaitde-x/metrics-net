@@ -1,3 +1,5 @@
+local-notes.md
+
 *.swp
 *.*~
 project.lock.json

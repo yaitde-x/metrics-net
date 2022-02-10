@@ -10,6 +10,7 @@ public static class CommandUtilities {
     {
         services.AddSingleton<Command, ParseCommand>();
         services.AddSingleton<Command, StackTraceCommand>();
+        services.AddSingleton<Command, GitParseHistoryCommand>();
         
         return services;
     }
