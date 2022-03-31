@@ -18,7 +18,7 @@ public class ParseCommand : Command
         var outputFileOption = new Option<string?>(new string[] { "--output", "-o" }, () => "", "path to output file");
         var outputTypeOption = new Option<string>(new string[] { "--type", "-t" }, () => "object", "output type [object|record], default=object");
         var formatOption = new Option<string>(new string[] { "--format", "-f" }, () => "json", "output type [json|csv], default=json");
-        var sqlOption = new Option<string?>(new string[] { "--sql", "-s" }, () => "", "writes to sql record a connection string");
+        var sqlOption = new Option<string?>(new string[] { "--sql", "-s" }, () => "", "sql connection string");
         var tableOption = new Option<string?>(new string[] { "--table", "-b" }, () => "", "this option is required if --sql is used");
 
         this.AddOption(inputFileOption);
@@ -107,106 +107,106 @@ public class ParseCommand : Command
         }
     }
 
-    private IDbCommand CreateInsertCommand(IDbConnection conn, CodeMetricRecord record)
-    {
-        var command = conn.CreateCommand();
+    // private IDbCommand CreateInsertCommand(IDbConnection conn, CodeMetricRecord record)
+    // {
+    //     var command = conn.CreateCommand();
 
-        command.CommandText = GetInsertTemplate();
-        command.CommandType = CommandType.Text;
+    //     command.CommandText = GetInsertTemplate();
+    //     command.CommandType = CommandType.Text;
 
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "period", record.Period));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "module", record.Assembly));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "namespace", record.Namespace));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "type", record.Type));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "signature", record.Signature));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "maintainabilityIndex", record.MaintainabilityIndex));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "cyclomaticComplexity", record.CyclomaticComplexity));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "classCoupling", record.ClassCoupling));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "depthOfInheritance", record.DepthOfInheritance));
-        command.Parameters.Add(SqlUtilities.CreateParameter(command, "linesOfCode", record.LinesOfCode));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "period", record.Period));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "module", record.Assembly));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "namespace", record.Namespace));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "type", record.Type));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "signature", record.Signature));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "maintainabilityIndex", record.MaintainabilityIndex));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "cyclomaticComplexity", record.CyclomaticComplexity));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "classCoupling", record.ClassCoupling));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "depthOfInheritance", record.DepthOfInheritance));
+    //     command.Parameters.Add(SqlUtilities.CreateParameter(command, "linesOfCode", record.LinesOfCode));
 
-        return command;
-    }
+    //     return command;
+    // }
 
-    private string GetInsertTemplate()
-    {
-        var sb = new StringBuilder();
+    // private string GetInsertTemplate()
+    // {
+    //     var sb = new StringBuilder();
 
-        sb.AppendLine("INSERT INTO [dbo].[raw-metrics]");
-        sb.AppendLine("           ([Period]");
-        sb.AppendLine("           ,[Module]");
-        sb.AppendLine("           ,[Namespace]");
-        sb.AppendLine("           ,[Type]");
-        sb.AppendLine("           ,[Signature]");
-        sb.AppendLine("           ,[MemberName]");
-        sb.AppendLine("           ,[Raw]");
-        sb.AppendLine("           ,[ReturnType]");
-        sb.AppendLine("           ,[MaintainabilityIndex]");
-        sb.AppendLine("           ,[CyclomaticComplexity]");
-        sb.AppendLine("           ,[ClassCoupling]");
-        sb.AppendLine("           ,[DepthOfInheritance]");
-        sb.AppendLine("           ,[LinesOfCode])");
-        sb.AppendLine("     VALUES");
-        sb.AppendLine("           (@period");
-        sb.AppendLine("           ,@module");
-        sb.AppendLine("           ,@namespace");
-        sb.AppendLine("           ,@type");
-        sb.AppendLine("           ,@signature");
-        sb.AppendLine("           ,@memberName");
-        sb.AppendLine("           ,@raw");
-        sb.AppendLine("           ,@returnType");
-        sb.AppendLine("           ,@maintainabilityIndex");
-        sb.AppendLine("           ,@cyclomaticComplexity");
-        sb.AppendLine("           ,@classCoupling");
-        sb.AppendLine("           ,@depthOfInheritance");
-        sb.AppendLine("           ,@linesOfCode)");
+    //     sb.AppendLine("INSERT INTO [dbo].[raw-metrics]");
+    //     sb.AppendLine("           ([Period]");
+    //     sb.AppendLine("           ,[Module]");
+    //     sb.AppendLine("           ,[Namespace]");
+    //     sb.AppendLine("           ,[Type]");
+    //     sb.AppendLine("           ,[Signature]");
+    //     sb.AppendLine("           ,[MemberName]");
+    //     sb.AppendLine("           ,[Raw]");
+    //     sb.AppendLine("           ,[ReturnType]");
+    //     sb.AppendLine("           ,[MaintainabilityIndex]");
+    //     sb.AppendLine("           ,[CyclomaticComplexity]");
+    //     sb.AppendLine("           ,[ClassCoupling]");
+    //     sb.AppendLine("           ,[DepthOfInheritance]");
+    //     sb.AppendLine("           ,[LinesOfCode])");
+    //     sb.AppendLine("     VALUES");
+    //     sb.AppendLine("           (@period");
+    //     sb.AppendLine("           ,@module");
+    //     sb.AppendLine("           ,@namespace");
+    //     sb.AppendLine("           ,@type");
+    //     sb.AppendLine("           ,@signature");
+    //     sb.AppendLine("           ,@memberName");
+    //     sb.AppendLine("           ,@raw");
+    //     sb.AppendLine("           ,@returnType");
+    //     sb.AppendLine("           ,@maintainabilityIndex");
+    //     sb.AppendLine("           ,@cyclomaticComplexity");
+    //     sb.AppendLine("           ,@classCoupling");
+    //     sb.AppendLine("           ,@depthOfInheritance");
+    //     sb.AppendLine("           ,@linesOfCode)");
 
-        return sb.ToString();
-    }
+    //     return sb.ToString();
+    // }
 
-    public async Task HandleAsync(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
-    {
-        using var instream = File.OpenRead(inputFile.Trim());
-        var parser = new XmlMetricsReportParser();
-        var codeReport = parser.Parse(instream);
+    // public async Task HandleAsync(string inputFile, string? outputFile, string outputType, string format, string? sqlConnectionString, string? tableName)
+    // {
+    //     using var instream = File.OpenRead(inputFile.Trim());
+    //     var parser = new XmlMetricsReportParser();
+    //     var codeReport = parser.Parse(instream);
 
-        if (!string.IsNullOrEmpty(sqlConnectionString) && string.IsNullOrEmpty(tableName))
-        {
-            throw new ArgumentException("to use the sql option, need to pass --table as well");
-        }
+    //     if (!string.IsNullOrEmpty(sqlConnectionString) && string.IsNullOrEmpty(tableName))
+    //     {
+    //         throw new ArgumentException("to use the sql option, need to pass --table as well");
+    //     }
 
-        if (!string.IsNullOrEmpty(outputFile))
-        {
-            using var outStream = File.OpenWrite(outputFile);
-            using var writer = new StreamWriter(outStream);
+    //     if (!string.IsNullOrEmpty(outputFile))
+    //     {
+    //         using var outStream = File.OpenWrite(outputFile);
+    //         using var writer = new StreamWriter(outStream);
 
-            if (outputType.ToLower().Equals("object"))
-            {
-                await writer.WriteAsync(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
-            }
-            else if (outputType.ToLower().Equals("record"))
-            {
-                var transformer = new MetricRecordTransformer();
-                var records = transformer.Transform(codeReport);
+    //         if (outputType.ToLower().Equals("object"))
+    //         {
+    //             await writer.WriteAsync(JsonConvert.SerializeObject(codeReport, Formatting.Indented));
+    //         }
+    //         else if (outputType.ToLower().Equals("record"))
+    //         {
+    //             var transformer = new MetricRecordTransformer();
+    //             var records = transformer.Transform(codeReport);
 
-                await writer.WriteAsync(JsonConvert.SerializeObject(records, Formatting.Indented));
-            }
-        }
+    //             await writer.WriteAsync(JsonConvert.SerializeObject(records, Formatting.Indented));
+    //         }
+    //     }
 
-        if (!string.IsNullOrEmpty(sqlConnectionString))
-        {
-            var conn = new SqlConnection(sqlConnectionString);
-            await conn.OpenAsync();
+    //     if (!string.IsNullOrEmpty(sqlConnectionString))
+    //     {
+    //         var conn = new SqlConnection(sqlConnectionString);
+    //         await conn.OpenAsync();
 
-            var transformer = new MetricRecordTransformer();
-            var records = transformer.Transform(codeReport);
+    //         var transformer = new MetricRecordTransformer();
+    //         var records = transformer.Transform(codeReport);
 
-            foreach (var record in records)
-            {
-                var command = CreateInsertCommand(conn, record);
-                var recordsAffected = command.ExecuteNonQuery();
-            }
+    //         foreach (var record in records)
+    //         {
+    //             var command = CreateInsertCommand(conn, record);
+    //             var recordsAffected = command.ExecuteNonQuery();
+    //         }
 
-        }
-    }
+    //     }
+    // }
 }
